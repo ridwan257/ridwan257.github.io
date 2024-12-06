@@ -1,0 +1,165 @@
+/* ==================================================================== */
+/* ==================		On tags of html			=================== */
+/* ==================================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+	font-family: Helvetica;
+	background-color: #fff;
+
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #3e3e3e;
+	/* margin: 0 0 0.75em 0; */
+}
+
+h1 {
+	font-size: 3.25em;
+	letter-spacing: -0.025em;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 2em;
+	letter-spacing: -0.015em;
+}
+
+p, ul, ol, dl, table {
+	margin-bottom: 1em;
+}
+
+/* ==================================================================== */
+/* ==================		Some Generic with r		=================== */
+/* ==================================================================== */
+.r-pointer{
+	cursor: pointer;
+}
+
+
+/* ==================================================================== */
+/* =====================	timeline section	======================== */
+/* ==================================================================== */
+.set-max {
+	display: inline-block;
+	max-width: 900px;  
+	width: 100%;    
+}
+
+#top h1 {
+	margin-top: 0.35em;
+}
+
+#top p {
+	font-size: 1.5em;
+	line-height: 1.75em;
+	color: #888;
+}
+
+#top a {
+	font-size: 1.5em;
+	line-height: 1.75em;
+}
+
+.timeline-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 1.2rem;
+	/* color: #f0c929; */
+	color: #ff6e00;
+}
+.timeline-subtitle {
+	margin: 0;
+	/* font-weight: 300; */
+	color: gray;
+	font-size: 0.9rem;
+}
+.timeline-date {
+	margin: 0;
+	font-size: 0.9rem;
+	color: #888;
+}
+
+
+/* ==================================================================== */
+/* =====================	timeline section	======================== */
+/* ==================================================================== */
+.r-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.r-col {
+	flex: 1 1 calc(25% - 20px);
+	margin: 10px;
+	min-width: 250px;
+	transition: transform 0.3s ease;
+}
+
+
+
+/* .r-col:hover {
+transform: scale(1.05);
+} */
+
+.r-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* align-items: stretch; */
+	height: 100%;
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+/* .r-card:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.r-card h3 {
+	text-align: center;
+	color: rgb(76, 167, 114);
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+
+.r-card p {
+	font-size: 1.1rem;
+	color: #7f8c8d;
+	line-height: 1.5;
+}
+
+.r-card ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	/* flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start; */
+}
+
+  
+.r-card ul li {
+	padding: 8px 0;
+	text-align: left;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 1rem;
+	color: #7f8c8d;
+	width: 100%;
+}
+
+.r-card ul li:last-child {
+	border-bottom: none;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./images/nature1 copy.jpeg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Ridwan</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>CURRENT WORK</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#timeline" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>TIMELINE</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <!-- <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#">
+      <img src="./images/nature1 copy.jpeg" style="width:100px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+    </a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey w3-left" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  </header>
+
+  <!-- Name and into section -->
+  <div class="w3-center w3-container">
+    <div class="w3-padding set-max" id="top">
+      <h1>Hi, I'm <strong>Ridwan</strong>.</h1>
+      <p>A passionate <strong>computational biology</strong> enthusiast, 
+        eager to learn and integrate biology, math and programming to discover new insights.</p>
+
+      <a class="w3-button w3-ripple w3-blue w3-round w3-padding-large" href="#who-am-i">Know more about me</a>
+    </div>
+    <hr class="w3-border">
+  </div>
+  
+  <!-- recent works -->
+  <div class="w3-container w3-center w3-padding" id="first">
+    <h2> Here all the staff I do.</h2>
+
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-hover-shadow r-pointer" onclick="open_card_viewer('mountains')">
+          <img src="./images/mountains.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container w3-white">
+            <p><b>Mountains of Ipsum</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum. 
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="./images/lights.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      
+      <div class="w3-third w3-container">
+        <img src="./images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Lorem Ipsum</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="w3-border">
+  </div>
+
+  <div class="w3-container w3-center w3-padding" id="timeline">
+    <h2>The Journey So Far</h2>
+
+    <table class="w3-table w3-centered">
+      <!-- <tr>
+        <td class="w3-border-right w3-right-align">
+          <p class="timeline-title">Started Master's Degree</p>
+          <p class="timeline-subtitle"><strong>Major:</strong> Genetic Engineering and Biotechnology</p>
+          <p class="timeline-subtitle">University of Dhaka</p>
+          <p class="timeline-date">Sep, 2023</p>
+        </td>
+        <td></td>
+      </tr> -->
+    </table>
+    <hr class="w3-border">
+  </div>
+
+
+
+  <!-- About Me -->
+  <div class="w3-container w3-padding-large" id="who-am-i">
+    <h2 class="w3-center">Who Am I?</h2>
+    <!-- <div class="w3-row-padding w3-padding-16">
+      <div class="w3-col m6">
+        <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+      </div>
+      <div class="w3-col m6">
+        <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+      </div>
+    </div> -->
+
+    <!-- <div  style="margin-bottom:32px"></div> -->
+    <p >
+      Just me, myself and I, exploring the universe of unknownment. 
+      I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. 
+      I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. 
+      Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. 
+      Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, 
+      ultricies congue gravida diam non fringilla.
+    </p>
+
+    <!-- Progress bars / Skills -->
+    <div class="w3-center">
+      <h2>Knowledge and Expertise</h2>
+      <div class="r-row">
+        
+        <!-- Programming Skill Card -->
+        <div class="r-col">
+          <div class="r-card w3-white w3-hover-shadow">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>R</li>
+              <li>C++</li>
+              <li>Bash</li>
+              <li>Node Js - ElectronJS Framework</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Molecular Biology Skill Card -->
+        <div class="r-col">
+          <div class="r-card w3-white w3-hover-shadow">
+            <h3>Molecular Biology</h3>
+            <ul>
+              <li>DNA extraction from Blood, Tissue, Bacteria</li>
+              <li>PCR</li>
+              <li>Gel Electrophoresis</li>
+              <li>DNA purification from Gel</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Data Analysis Skill Card -->
+        <div class="r-col">
+          <div class="r-card w3-white w3-hover-shadow">
+            <h3>Data Analysis</h3>
+            <ul>
+              <li>Python: Numpy, Pandas, Scikit-learn, Seaborn, Streamlit</li>
+              <li>R: Tidyverse Ecosystem</li>
+              <li>Statistical Modeling and Analysis</li>
+              <li>Machine Learning: Supervised and Unsupervised Algorithms</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Genomics Skill Card -->
+        <div class="r-col">
+          <div class="r-card w3-white w3-hover-shadow">
+            <h3>Genomics</h3>
+            <ul>
+              <li>Sanger Sequencing Data Handling</li>
+              <li>Exome Sequencing Analysis</li>
+              <li>Metagenomics Data Analysis</li>
+              <li>In Silico Primer Design</li>
+              <li>In Silico PCR</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Transcriptomics Skill Card -->
+        <div class="r-col">
+          <div class="r-card w3-white w3-hover-shadow">
+            <h3>Transcriptomics</h3>
+            <ul>
+              <li>Microarray Gene Expression Analysis</li>
+              <li>RNA-Seq Data Analysis</li>
+            </ul>
+          </div>
+        </div>
+
+         <!-- Proteomics Skill Card -->
+         <div class="r-col">
+          <div class="r-card w3-white w3-hover-shadow">
+            <h3>Proteomics</h3>
+            <ul>
+              <li>Protein Visualization tool: PyMol, UCSF Chimera</li>
+              <li>Molecular Docking using AutoDock Vina</li>
+              <li>Fundamental Understanding of MD Simulation</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Download Resume -->
+    <p>
+      <button class="w3-button w3-teal w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+
+    <hr class="w3-border">
+  </div>
+
+
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-center w3-padding-large w3-grey">
+    <h2 id="contact"><b>Get In Touch</b></h2>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>reubenridwan@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Dhaka, Bangladesh</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-row">
+        <div class="w3-half">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-half">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <textarea class="w3-input w3-border" name="Message" id="email-msg" rows="8" required></textarea>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+
+  <footer style="height: 400px;">
+  </footer>
+<!-- End page content -->
+</div>
+
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
