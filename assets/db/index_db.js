@@ -72,7 +72,7 @@ const MY_JOURNEY = [
         date : "Jul, 2023"
     },
     {
-        title : "Enrolled to Undergraduate Course",
+        title : "Enrolled to Undergraduate Program",
         subtitle : [
             "<strong>Major:</strong> Genetic Engineering and Biotechnology",
             "University of Dhaka"

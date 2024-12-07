@@ -10,12 +10,19 @@ function getUrlParameter(name) {
 function loadContent(id) {
     const contentDiv = document.getElementById('content');
 
-    if (itemId === 'mountains') {
-        contentDiv.innerHTML = `
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <img src="./images/mountains.jpg" alt="Mountains" style="width:100%">
-        `;
-    }
+    fetch(`./assets/db/${id}.html`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Content not found');
+      }
+      return response.text();
+    })
+    .then(html => {
+        contentDiv.innerHTML = html;
+    })
+    .catch(error => {
+        contentDiv.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+    });
 }
 
 
