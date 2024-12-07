@@ -26,6 +26,11 @@ h2 {
 	letter-spacing: -0.015em;
 }
 
+h5 {
+	font-size: 1.5em;
+	letter-spacing: -0.010em;
+}
+
 p, ul, ol, dl, table {
 	margin-bottom: 1em;
 }
@@ -99,11 +104,6 @@ p, ul, ol, dl, table {
 }
 
 
-
-/* .r-col:hover {
-transform: scale(1.05);
-} */
-
 .r-card {
 	display: flex;
 	flex-direction: column;
@@ -118,20 +118,20 @@ transform: scale(1.05);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 } */
 
-.r-card h3 {
+.r-card-h3 {
 	text-align: center;
 	color: rgb(76, 167, 114);
 	font-size: 1.5rem;
 	margin-bottom: 15px;
 }
 
-.r-card p {
+.r-card-p {
 	font-size: 1.1rem;
 	color: #7f8c8d;
 	line-height: 1.5;
 }
 
-.r-card ul {
+.r-ul {
 	list-style-type: none;
 	padding-left: 0;
 	margin: 0;
@@ -143,7 +143,7 @@ transform: scale(1.05);
 }
 
   
-.r-card ul li {
+.r-ul li {
 	padding: 8px 0;
 	text-align: left;
 	border-bottom: 1px solid #f0f0f0;
@@ -152,14 +152,11 @@ transform: scale(1.05);
 	width: 100%;
 }
 
-.r-card ul li:last-child {
+.r-ul li:last-child {
 	border-bottom: none;
 }
 
 
-
-
-
-
-
-
+.custom-equal-height-row { display: flex; flex-wrap: wrap; } 
+.custom-equal-height-col { flex: 1; display: flex; flex-direction: column; } 
+.custom-equal-height-content { display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
