@@ -117,18 +117,6 @@ function create_timeline_item(item_object, node_dir){
 }
 
 
-function send_mail(){
-    const params = {
-        from_name : document.getElementById("mail-name").value,
-        reply_to : document.getElementById("mail-addr").value,
-        subject : document.getElementById("mail-sub").value,
-        message : document.getElementById("mail-msg").value,
-    }
-    // console.log(params);
-    emailjs.send("rid_88738242394", "template_kd2w2wy", params)
-    .then( ()=>{
-        alert("Mail has been Sent!")
-    })
-}
+
 
 

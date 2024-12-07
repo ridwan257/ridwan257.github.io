@@ -32,8 +32,37 @@ MY_JOURNEY.forEach(e => {
 })
 
 
+// ==================================================================
+// ~~~~~~~~~~~~~~~~~~~~~~~ EMAIL SUBMIT  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ==================================================================
+const contact_form = document.getElementById('contact-form');
+const mail_btn = document.getElementById('mail-submit-btn');
+contact_form.addEventListener('submit', (event)=>{
+    event.preventDefault();
 
+    if (contact_form.checkValidity()) {
+        const params = {
+            from_name : document.getElementById("mail-name").value,
+            reply_to : document.getElementById("mail-addr").value,
+            subject : document.getElementById("mail-sub").value,
+            message : document.getElementById("mail-msg").value,
+        }
+        mail_btn.classList.add('w3-disabled');
 
+        emailjs.send("rid_88738242394", "template_kd2w2wy", params)
+        .then(()=>{
+            alert("Your mail has been sent!");
+            mail_btn.classList.remove('w3-disabled');
+            contact_form.reset();
+        });
+        
+    } else {
+        alert("Please fill in all required fields correctly.");
+    }
+    
+
+    
+});
 // ==================================================================
 // ~~~~~~~~~~~~~~~~~~~~~ WINDOW ENENT HANDLER ~~~~~~~~~~~~~~~~~~~~~~~
 // ==================================================================
