@@ -7,10 +7,10 @@ function getUrlParameter(name) {
 // ==================================================================
 // ~~~~~~~~~~~~~~~~~~~~~ LOAD CONTENT FUNCTION ~~~~~~~~~~~~~~~~~~~~~~~
 // ==================================================================
-function loadContent(id) {
+function loadContent(src_page) {
     const contentDiv = document.getElementById('content');
 
-    fetch(`./assets/db/${id}.html`)
+    fetch(`./assets/db/${src_page}.html`)
     .then(response => {
       if (!response.ok) {
         throw new Error('Content not found');

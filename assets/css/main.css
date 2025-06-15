@@ -155,8 +155,3 @@ p, ul, ol, dl, table {
 .r-ul li:last-child {
 	border-bottom: none;
 }
-
-
-.custom-equal-height-row { display: flex; flex-wrap: wrap; } 
-.custom-equal-height-col { flex: 1; display: flex; flex-direction: column; } 
-.custom-equal-height-content { display: flex; flex-direction: column; justify-content: space-between; flex: 1; }

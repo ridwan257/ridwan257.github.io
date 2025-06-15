@@ -36,7 +36,7 @@ function create_project_items(item_object) {
 
     const f_div = document.createElement('div');
     f_div.classList.add("r_content", "w3-white", "w3-hover-shadow");
-    f_div.onclick = () => open_card_viewer(item_object.id, item_object.title);
+    f_div.onclick = () => open_card_viewer(item_object.src_page, item_object.title);
 
 
     const img = document.createElement('img');
@@ -117,6 +117,38 @@ function create_timeline_item(item_object, node_dir){
 }
 
 
+function create_skill_items(skill_obj)
+{
+    // <div class="r-col">
+    //     <div class="r-card w3-white w3-hover-shadow">
+    //     <h3 class="r-card-h3">Molecular Biology</h3>
+    //     <ul class="r-ul">
+    //         <li>DNA extraction from Blood, Tissue, Bacteria</li>
+    //         <li>PCR</li>
+    //         <li>Gel Electrophoresis</li>
+    //         <li>DNA purification from Gel</li>
+    //     </ul>
+    //     </div>
+    // </div>
 
+    const elem = document.createElement('div');
+    elem.classList.add("r-col");
+    
+    let skill_list = "";
+    skill_obj.list_element.forEach(e => {
+        skill_list += `<li>${e}</li> `;
+    });
+
+    elem.innerHTML = `
+        <div class="r-card w3-white w3-hover-shadow">
+        <h3 class="r-card-h3">${skill_obj.title}</h3>
+        <ul class="r-ul">
+            ${skill_list}
+        </ul>
+        </div>
+    `
+
+    return elem;
+}
 
 

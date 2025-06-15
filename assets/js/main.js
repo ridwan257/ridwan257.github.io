@@ -33,6 +33,16 @@ MY_JOURNEY.forEach(e => {
 
 
 // ==================================================================
+// ~~~~~~~~~~~~~~~~~~~~~~~ SKILL SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~
+// ==================================================================
+const skill_section = document.getElementById("skill-section");
+SKILLS.forEach(e => {
+    const elem = create_skill_items(e);
+    skill_section.appendChild(elem);
+});
+
+
+// ==================================================================
 // ~~~~~~~~~~~~~~~~~~~~~~~ EMAIL SUBMIT  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ==================================================================
 const contact_form = document.getElementById('contact-form');
